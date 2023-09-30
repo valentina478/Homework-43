@@ -56,6 +56,6 @@ def create_tables(cr):
         )
     ''')
 
-with sqlite3.connect("flowershop.db") as db:
+with sqlite3.connect("hospital.db") as db:
     cr = db.cursor()
     create_tables(cr)
